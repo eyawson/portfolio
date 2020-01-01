@@ -9,4 +9,50 @@ body {
 a {
     min-width: 48px;
     min-height: 48px;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-image: url('/images/home.jpg');
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+nav {
+    float: right;
+    padding: 10px;
+}
+
+nav a {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+#intro {
+    margin-top: 35%;
+    color: #ffffff;
+    background-color: rgba(8, 8, 8, 0.7);
+    padding-left: 10px;
+    text-align: center;
+    font-weight: 600;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 5px;
+}
+
+#bio,
+#portfolio {
+    height: 350px;
+}
+
+address {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1rem;
 }

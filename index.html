@@ -20,34 +20,39 @@
     <div id="ey">
         <header>
             <!-- logo goes here -->
+            <img src="./images/ebowLogo.svg" alt="my logo">
             <nav class="menu">
                 <a href="/">Home</a>
-                <a href="#portfolio"><i class="fa fa-briefcase fa-2x"></i>Portfolio</a>
-                <a href="#bio"><i class="fa fa-info fa-2x"></i>About</a>
-                <a href="#contact"><i class="fa fa-address-card fa-2x"></i>Contact</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact"></i>Contact</a>
             </nav>
-            <div>
+            <div id="intro">
                 {{ intro }}
             </div>
         </header>
-        <main class="bio">
+        <address>
+            <!-- put contact info here again so recruiter/ employer can reach me quickly -->
+            <p>email: <a href="mailto:ebow.yawson@gmail.com">ebow.yawson@gmail.com</a>
+                <span> | phone: <a href="tel:973-489-2670">973 489 2670</a></span></p>
+        </address>
+        <main id="bio">
             <!-- Background and my image will go here -->
             {{ bio }}
         </main>
-        <address>
-            <!-- put contact info here again so recruiter/ employer can reach me quickly -->
-        </address>
         <section id="portfolio">
-            <!-- Here my potfolio stands -->
+            <!-- 
+                Here my potfolio stands. Show 3 on mobile. 4 on tablet. 6 on laptop
+                link to github
+             -->
         </section>
-        <aside id="media">
-            <!-- social media and other news. hidden in mobile view -->
-        </aside>
+        <!-- <aside id="media">
+             social media and other news. hidden in mobile view 
+        </aside> -->
         <footer>
             <div id="social">
-                <a href="www.linkedin.com/in/ebowyawson" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                <a href="www.twitter.com/yawson_e" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                <a href="www.github.com/eyawson" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                <a href="www.linkedin.com/in/ebowyawson" target="_blank"><i class="fa fa-linkedin fa"></i></a>
+                <a href="www.twitter.com/yawson_e" target="_blank"><i class="fa fa-twitter fa"></i></a>
+                <a href="www.github.com/eyawson" target="_blank"><i class="fa fa-github fa"></i></a>
             </div>
             <p>Glad you came by... eyawson<span>&copy;</span></p>
         </footer>
