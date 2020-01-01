@@ -1,0 +1,12 @@
+body {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    min-width: 48px;
+    min-height: 48px;
+}
