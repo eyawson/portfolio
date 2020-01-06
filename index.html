@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-    <link href="https://fonts.googleapis.com/css?family=Kulim+Park:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,600,700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="./js/app.js" defer></script>
     <title>Vue Ebow's Portfolio</title>
@@ -19,15 +19,18 @@
 <body>
     <div id="ey">
         <header>
-            <!-- logo goes here -->
-            <img src="./images/ebowLogo.svg" alt="my logo">
-            <nav class="menu">
-                <a href="/">Home</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact"></i>Contact</a>
-            </nav>
+            <div class="top">
+                <img src="/images/meLogo.svg" alt="my logo">
+                <nav class="menu">
+                    <a href="/">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
             <div id="intro">
-                {{ intro }}
+                <p>
+                    {{ intro }}
+                </p>
             </div>
         </header>
         <address>
@@ -37,17 +40,30 @@
         </address>
         <main id="bio">
             <!-- Background and my image will go here -->
-            {{ bio }}
+            <p>
+                {{ bio }}
+            </p>
         </main>
         <section id="portfolio">
             <!-- 
                 Here my potfolio stands. Show 3 on mobile. 4 on tablet. 6 on laptop
                 link to github
              -->
+            <ul>
+                <li v-for="skill in majorSkills">{{ skill }}</li>
+            </ul>
+            <ol>
+                <li v-for="skills in minorSkills">{{ skills }}</li>
+            </ol>
         </section>
-        <!-- <aside id="media">
-             social media and other news. hidden in mobile view 
-        </aside> -->
+        <aside id="media">
+            <!-- social media and other news. hidden in mobile view -->
+            <p>
+                {{ friends }}
+                <span><a href="https://www.linkedin.com/search/results/people/?facetIndustry=%5B%2296%22%2C%224%22%5D&facetNetwork=%5B%22F%22%5D&origin=FACETED_SEARCH"
+                        target="_blank">here.</a></span>
+            </p>
+        </aside>
         <footer>
             <div id="social">
                 <a href="www.linkedin.com/in/ebowyawson" target="_blank"><i class="fa fa-linkedin fa"></i></a>
