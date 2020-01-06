@@ -1,58 +1,87 @@
+/* colors: 78c0e0, 449dd1, 150578 */
+
 body {
-    font-family: 'Kulim Park', sans-serif;
-    font-size: 16px;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+  font-family: "Kulim Park", sans-serif;
+  font-size: 16px;
+  color: #150578;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
-    min-width: 48px;
-    min-height: 48px;
-    text-decoration: none;
-    color: black;
+  min-width: 48px;
+  min-height: 48px;
+  text-decoration: none;
+  color: black;
 }
 
 header {
-    background-image: url('/images/home.jpg');
-    background-repeat: no-repeat;
-    height: 50vh;
+  background-image: url("/images/cloud1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+}
+header img {
+  width: 70px;
+  padding-left: 10px;
 }
 
 nav {
-    float: right;
-    padding: 10px;
+  float: right;
+  padding: 25px 10px;
 }
 
 nav a {
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 5px;
-    border: 1px solid red;
-    padding: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  color: #150578;
+  border: 1px solid #150578;
+  padding: 5px;
+}
+address {
+  background-color: #78c0e0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 15px 0;
 }
 
 #intro {
-    margin-top: 35%;
-    color: #ffffff;
-    background-color: rgba(8, 8, 8, 0.7);
-    padding-left: 10px;
-    text-align: center;
-    font-weight: 600;
-    height: auto;
-    font-size: 1.2rem;
-    line-height: 1;
-    padding: 5px;
+  margin-top: 35%;
+  color: #ffffff;
+  background-color: rgba(7, 57, 237, 0.7);
+  padding-left: 10px;
+  text-align: center;
+  font-weight: 600;
+  height: auto;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 5px;
 }
 
 #bio,
 #portfolio {
-    height: 350px;
+  height: 350px;
 }
 
-address {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 1rem;
+#bio p,
+#media p {
+  width: 270px;
+  margin: auto;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #449dd1;
+  height: 200px;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.fa {
+  color: #ffffff;
 }
