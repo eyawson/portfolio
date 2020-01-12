@@ -5,7 +5,41 @@ const app = new Vue({
         //visitorName: '',
         bio: 'I am a cloud developer here looking to be a part of your team. I have years of experience working professionaly in different roles. I have been working very hard at web and cloud development and I am ready to be part of your team and contribute meaningfuly. This is a love, and will not change whether it is my full-time job (when you hire me) or a hobby.',
         majorSkills: ['Html', 'CSS', 'JavaScript', 'Cloud Development', 'AWS', 'Microservices', 'Docker', 'Kubernetes', 'SQL', 'Accessibility', 'PWA', 'React', 'Vue', 'IONIC', 'Lambda'],
-        friends: 'If i do no fit your role, how about you check out my friends. There are gems all over ',
-        contact: ['973 489 2670', 'ebow.yawson@gmail.com']
+        friends: 'If i do no fit your role, how about you check out my friends on ',
+        contact: ['973 489 2670', 'ebow.yawson@gmail.com'],
+        showcase: [{
+                name: 'Udagram Microservice',
+                skills: ['Kubernetes', 'Typescript', 'Docker', 'Travis CI', 'IONIC'],
+                link: 'https://github.com/eyawson/udacity-microservice-project'
+            },
+            {
+                name: 'Phebe\'s book',
+                skills: ['a', 'b', 'c'],
+                link: 'https://github.com/eyawson/phebebook'
+            },
+            {
+                name: 'Ravenous a Yelp clone',
+                skills: ['a', 'b', 'c'],
+                link: 'https://github.com/eyawson/ravenous'
+            },
+            /* {
+                name: 'MWS Prgressive app',
+                image: '4.jpg',
+                skills: ['a', 'b', 'c'],
+                link: 'https://github.com/eyawson/mws_stage_1'
+            },
+            work5: {
+                name: 'MWS Progressive app',
+                image: '5.jpg',
+                skills: ['a', 'b', 'c'],
+                link: 'https://github.com/eyawson/mws_stage_1'
+            },
+            work6: {
+                name: 'MWS Progressive app',
+                image: '6.jpg',
+                skills: ['a', 'b', 'c'],
+                link: 'https://github.com/eyawson/mws_stage_1'
+            } */
+        ]
     }
 })

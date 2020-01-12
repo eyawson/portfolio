@@ -25,13 +25,13 @@ header {
 }
 
 header img {
-  width: 70px;
+  width: 50px;
   padding-left: 10px;
 }
 
 nav {
   float: right;
-  padding: 25px 10px;
+  padding: 15px 10px;
 }
 
 nav a {
@@ -59,7 +59,6 @@ address {
   opacity: 0.7;
   padding-left: 10px;
   text-align: center;
-  font-weight: 600;
   height: auto;
   font-size: 1.2rem;
   line-height: 1;
@@ -70,11 +69,30 @@ address {
 #portfolio {
   height: 350px;
 }
+#portfolio {
+  box-shadow: 0 4px 8px 0;
+  max-width: 310px;
+  transition: 0.3s;
+}
+#portfolio:hover {
+  box-shadow: 0 8px 16px 0;
+}
+
+.portfolio content {
+  padding: 2px 16px;
+}
+section img {
+  width: 100%;
+  overflow: hidden;
+}
 
 #bio p,
 #media p {
-  width: 270px;
+  width: 290px;
   margin: auto;
+}
+#media p span a {
+  color: #150578;
 }
 
 footer {
@@ -83,8 +101,13 @@ footer {
   height: 200px;
   padding-top: 30px;
   padding-left: 10px;
+  text-align: center;
 }
 
 .fa {
+  padding: 15px;
   color: #150578;
+}
+.social {
+  text-align: center;
 }
