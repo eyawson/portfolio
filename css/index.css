@@ -10,6 +10,27 @@ body {
   scroll-behavior: smooth;
 }
 
+#ey {
+  display: none;
+}
+
+aside {
+  background-image: url("/images/construction.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+p,
+h1 {
+  padding-left: 5px;
+}
+
 a {
   min-width: 48px;
   min-height: 48px;
@@ -69,11 +90,13 @@ address {
 #portfolio {
   height: 350px;
 }
+
 #portfolio {
   box-shadow: 0 4px 8px 0;
   max-width: 310px;
   transition: 0.3s;
 }
+
 #portfolio:hover {
   box-shadow: 0 8px 16px 0;
 }
@@ -81,6 +104,7 @@ address {
 .portfolio content {
   padding: 2px 16px;
 }
+
 section img {
   width: 100%;
   overflow: hidden;
@@ -91,6 +115,7 @@ section img {
   width: 290px;
   margin: auto;
 }
+
 #media p span a {
   color: #150578;
 }
@@ -108,6 +133,7 @@ footer {
   padding: 15px;
   color: #150578;
 }
+
 .social {
   text-align: center;
 }
