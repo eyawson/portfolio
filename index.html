@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fcb8a1" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
@@ -23,18 +24,7 @@
 
   <body>
     <aside>
-      <h1 class="a">Website Under Construction</h1>
-      <p>
-        Please check out my
-        <a href="www.github.com/eyawson" target="_blank">Github</a> and
-        <a href="www.linkedin.com/in/ebowyawson" target="_blank">Linkedin</a>
-        pages for now.
-      </p>
-      <p>
-        Or simply reach out to me... email:
-        <a href="mailto:ebow.yawson@gmail.com">ebow.yawson@gmail.com</a>
-        <span> | phone: <a href="tel:973-489-2670">973 489 2670</a></span>
-      </p>
+      <h2>Not ready for larger screens yet!</h2>
     </aside>
     <div id="ey">
       <header>
@@ -62,6 +52,7 @@
       </address>
       <main id="bio">
         <!-- Background and my image will go here -->
+        <h2>Summary</h2>
         <p>
           {{ bio }}
         </p>
@@ -72,18 +63,16 @@
                 link to github
                 
                 *have to work on displaying images from js
+                
              -->
-        <img src="/images/cloud3.jpg" alt="repo image" />
-        {{ work.image }}
-        <p>
+        <img :src="work.image" :alt="work.alt" />
+        <h2 class="content">
           {{ work.name }}
+        </h2>
+        <p class="content">
+          {{ work.skills[0] }}, {{ work.skills[1] }}, {{ work.skills[2] }}
         </p>
-        <p>
-          Technologies: {{ work.skills }}
-        </p>
-        <p>
-          {{ work.link }}
-        </p>
+        <a class="content" :href="work.link">Github link</a>
         <!-- <p v-for="work in showcase">
                 {{ work }}
             </p> -->

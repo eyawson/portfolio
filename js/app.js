@@ -9,17 +9,23 @@ const app = new Vue({
         contact: ['973 489 2670', 'ebow.yawson@gmail.com'],
         showcase: [{
                 name: 'Udagram Microservice',
-                skills: ['Kubernetes', 'Typescript', 'Docker', 'Travis CI', 'IONIC'],
+                image: '/images/cloud3.jpg',
+                alt: 'image repo',
+                skills: ['Kubernetes', 'Docker', 'Travis CI', ],
                 link: 'https://github.com/eyawson/udacity-microservice-project'
             },
             {
                 name: 'Phebe\'s book',
-                skills: ['a', 'b', 'c'],
+                image: './images/cloud2.jpg',
+                alt: 'image repo',
+                skills: ['HTML', 'CSS', 'Javascript'],
                 link: 'https://github.com/eyawson/phebebook'
             },
             {
                 name: 'Ravenous a Yelp clone',
-                skills: ['a', 'b', 'c'],
+                image: '/images/cloud1.jpg',
+                alt: 'image repo',
+                skills: ['React', 'APIs', 'CRUD'],
                 link: 'https://github.com/eyawson/ravenous'
             },
             /* {
