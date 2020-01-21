@@ -2,10 +2,10 @@ const app = new Vue({
   el: "#ey",
   data: {
     intro:
-      "Welcome to my page. My name is Ebow Yawson and I am glad you checked me out. Hopefully, you will hire me or point me in the right direction.",
+      "Welcome to my page. My name is Ebow Yawson and I am glad you checked me out. Hopefully, we can have a conversation",
     //visitorName: '',
     bio:
-      "I am a fullstack cloud developer here looking to be a part of your team. In my many years of working professionaly, I have risen rapidly through the rank due to hard work, commitment, and and seeing through tasks. I have been working very hard at this career change to web and cloud development. I beleive I am ready to be part of your team and contribute meaningfuly. This is a love to build and figure things out.",
+      "I am a full-stack cloud developer looking to be a part of your team. In my many years of working professionally, I have risen rapidly through the rank due to hard work, commitment, and seeing through tasks. I have been working very hard at this career change to web and cloud development. I believe I am ready to be part of your team and contribute meaningfully. This is a love to build and figure things out.",
     majorSkills: [
       "Html",
       "CSS",
@@ -23,7 +23,7 @@ const app = new Vue({
       "IONIC",
       "Lambda"
     ],
-    friends: "If i do no fit your role, how about you check out my friends on ",
+    friends: "If I do no fit your role, how about you check out my friends on ",
     contact: ["973 489 2670", "ebow.yawson@gmail.com"],
     showcase: [
       {
