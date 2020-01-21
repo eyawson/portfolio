@@ -30,7 +30,7 @@
         <img src="/images/meLogo.svg" alt="my logo" />
         <nav class="menu">
           <a href="/">Home</a>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#works">Portfolio</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -40,7 +40,7 @@
         </p>
       </div>
     </header>
-    <address>
+    <address id="contact">
       <!-- put contact info here again so employer can reach me quickly -->
       <p>
         email:
@@ -55,7 +55,7 @@
         {{ bio }}
       </p>
     </main>
-    <section id="portfolio" v-for="work in showcase">
+    <section id="works" v-for="work in showcase">
       <!-- 
                 Here my potfolio stands. Show 3 on mobile. 4 on tablet. 6 on laptop
                 link to github
@@ -71,9 +71,6 @@
         {{ work.skills[0] }}, {{ work.skills[1] }}, {{ work.skills[2] }}
       </p>
       <a class="content" :href="work.link" tabindex="0">Github link</a>
-      <!-- <p v-for="work in showcase">
-                {{ work }}
-            </p> -->
     </section>
     <aside id="media">
       <!-- social media and other news. hidden in mobile view -->
@@ -81,7 +78,7 @@
         {{ friends }}
         <span><a
             href="https://www.linkedin.com/search/results/people/?facetIndustry=%5B%2296%22%2C%224%22%5D&facetNetwork=%5B%22F%22%5D&origin=FACETED_SEARCH"
-            target="_blank">Linkedin.</a></span>
+            target="_blank" aria-label="link to my linkedin friends in the tech field">Linkedin.</a></span>
       </p>
     </aside>
     <footer>

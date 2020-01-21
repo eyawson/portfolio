@@ -82,26 +82,26 @@ h2 {
   padding-bottom: 30px;
 }
 
-#portfolio {
+#works {
   margin-top: 15px;
   box-shadow: 0 4px 8px #fcb8a1;
   transition: 0.3s;
   padding-bottom: 30px;
 }
 
-#portfolio p,
-#portfolio a,
-#portfolio h2 {
+#works p,
+#works a,
+#works h2 {
   font-size: 1.2em;
   line-height: 1.5;
   padding-left: 10px;
 }
 
-#portfolio:hover {
+#works:hover {
   box-shadow: 0 8px 16px #fcb8a1;
 }
 
-.portfolio content {
+.works content {
   padding: 2px 16px;
 }
 
@@ -146,7 +146,7 @@ footer {
 
 #skills {
   padding-top: 30px;
-  border-top: 1px solid #ffffff;
+  border-top: 1px dashed #ffffff;
   margin-top: 30px;
   padding-bottom: 30px;
 }
@@ -167,11 +167,9 @@ footer {
 }
 
 @media only screen and (min-width: 321px) {
-
   h2.big {
     display: none;
   }
-
 }
 
 @media only screen and (min-width: 426px) {
@@ -184,7 +182,7 @@ footer {
   }
 
   body {
-    background-image: url('/images/backgroundBig.svg');
+    background-image: url("/images/backgroundBig.svg");
     color: #ffffff;
     font-size: 60px;
   }
