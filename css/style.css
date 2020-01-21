@@ -13,6 +13,7 @@ a {
   min-width: 48px;
   min-height: 48px;
   text-decoration: none;
+  color: #ca471b;
 }
 
 header {
@@ -123,9 +124,10 @@ section img {
   padding: 30px 0;
 }
 
+/* 
 #media p span a {
   color: #150578;
-}
+} */
 
 footer {
   color: #150578;
