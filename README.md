@@ -4,4 +4,4 @@
 
 This project is being built using Vue JS. Let me know what you think!
 
-At this time I am working on mobile versions only
+At this time I am working on mobile versions only.
