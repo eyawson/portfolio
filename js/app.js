@@ -38,30 +38,30 @@ const app = new Vue({
         link: "https://github.com/eyawson/phebebook"
       },
       {
-        name: "Ravenous a Yelp clone",
+        name: "Quantum Leap website",
+        image: "/images/qli.png",
+        alt: "image repo",
+        skills: ["HTML", "CSS", "AWS hosting"],
+        link: "https://github.com/eyawson/ravenous"
+      }
+      /* {
+               work 3 name: 'Restaurant Reviews',
+                image: '4.jpg',
+                skills: ['Javascript', 'HTML / CSS', 'PWA'],
+                link: 'https://github.com/eyawson/Restaurant-Reviews'
+            },
+            work5: {
+                name: 'Udagram Social App',
+                image: '5.jpg',
+                skills: ['elastic beanstalk', 'APIs', 'Typescript'],
+                link: 'https://github.com/eyawson/udagram'
+            },
+            work 2 name: "Ravenous a Yelp clone",
         image: "/images/qli.png",
         alt: "image repo",
         skills: ["React", "APIs", "CRUD"],
         link: "https://github.com/eyawson/ravenous"
-      }
-      /* {
-                name: 'MWS Prgressive app',
-                image: '4.jpg',
-                skills: ['a', 'b', 'c'],
-                link: 'https://github.com/eyawson/mws_stage_1'
-            },
-            work5: {
-                name: 'MWS Progressive app',
-                image: '5.jpg',
-                skills: ['a', 'b', 'c'],
-                link: 'https://github.com/eyawson/mws_stage_1'
-            },
-            work6: {
-                name: 'MWS Progressive app',
-                image: '6.jpg',
-                skills: ['a', 'b', 'c'],
-                link: 'https://github.com/eyawson/mws_stage_1'
-            } */
+       */
     ]
   }
 });
