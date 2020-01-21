@@ -68,9 +68,9 @@
         {{ work.name }}
       </h2>
       <p class="content">
-        {{ work.skills[0] }}, {{ work.skills[1] }}, {{ work.skills[2] }}
+        {{ work.skills[0] }}, {{ work.skills[1] }}, {{ work.skills[2] }}, {{ work.skills[3] }}
       </p>
-      <a class="content" :href="work.link">Github link</a>
+      <a class="content" :href="work.link" target="_blank" rel="noopener">Github link</a>
     </section>
     <aside id="media">
       <!-- social media and other news. hidden in mobile view -->
@@ -84,11 +84,11 @@
     </aside>
     <footer>
       <div id="social">
-        <a href="https://www.linkedin.com/in/ebowyawson" target="_blank" aria-label="link to my linkedin page"><i
-            class="fa fa-linkedin fa"></i></a>
-        <a href="https://www.twitter.com/yawson_e" target="_blank" aria-label="link to my twitter page"><i
-            class="fa fa-twitter fa"></i></a>
-        <a href="https://www.github.com/eyawson" target="_blank" aria-label="link to my github page"><i
+        <a href="https://www.linkedin.com/in/ebowyawson" target="_blank" rel="noopener"
+          aria-label="link to my linkedin page"><i class="fa fa-linkedin fa"></i></a>
+        <a href="https://www.twitter.com/yawson_e" target="_blank" rel="noopener"
+          aria-label="link to my twitter page"><i class="fa fa-twitter fa"></i></a>
+        <a href="https://www.github.com/eyawson" target="_blank" rel="noopener" aria-label="link to my github page"><i
             class="fa fa-github fa"></i></a>
       </div>
       <p>Glad you came by...</p>
