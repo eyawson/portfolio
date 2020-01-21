@@ -72,19 +72,23 @@ address a {
   padding: 5px;
 }
 
+#bio h2 {
+  font-size: 1.5em;
+}
+
 h2 {
   font-weight: 600;
 }
 
-#bio,
-#portfolio {
-  height: 300px;
+#bio {
+  padding-bottom: 30px;
 }
 
 #portfolio {
   margin-top: 15px;
   box-shadow: 0 4px 8px #fcb8a1;
   transition: 0.3s;
+  padding-bottom: 30px;
 }
 
 #portfolio p,
@@ -116,7 +120,8 @@ section img {
   margin: auto;
 }
 
-#media p {
+#media p,
+#bio h2 {
   padding: 30px 0;
 }
 
@@ -129,13 +134,13 @@ footer {
   background-color: #fcb8a1;
   height: 200px;
   padding-top: 30px;
-  padding-left: 10px;
   text-align: center;
 }
 
-.fa {
+#social a i {
   padding: 15px;
   color: #150578;
+  font-size: 2rem;
 }
 
 .social {
@@ -143,17 +148,29 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
-  aside {
+  .big {
     display: none;
+  }
+
+  .small {
+    display: block;
   }
 }
 
 @media only screen and (min-width: 321px) {
+
+  h2.big {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 426px) {
   #ey {
     display: none;
   }
 
-  aside {
+  aside.big {
     display: block;
   }
 
