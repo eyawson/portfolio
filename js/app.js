@@ -3,7 +3,7 @@ const app = new Vue({
   data: {
     name: ' Hello!',
     intro: 'I\'m Ebow',
-    introB: 'Web Developer | Problem Solver',
+    introB: 'Web Developer "+" Problem Solver',
     bio: 'I am a full-stack cloud developer looking to be a part of your team. In my many years of working professionally, I have risen rapidly through the rank due to hard work, commitment, and seeing through tasks. I have been working very hard at this career change to web and cloud development. I believe I am ready to be part of your team and contribute meaningfully. This is a love to build and figure things out.',
     majorSkills: [
       'Html',
