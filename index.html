@@ -1,104 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fcb8a1" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kulim+Park:300,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <title>Vue Ebow's Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="theme-color" content="#fcb8a1" />
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
-  <link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,600,700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
-  <script src="./js/app.js" defer></script>
-  <title>Vue Ebow's Portfolio</title>
-</head>
-
-<body>
-  <aside>
-    <h2 class="small">Website under construction!</h2>
-    <h2 class="big">
-      Not ready for larger screens yet. (viewable @ 320px max)
-    </h2>
-  </aside>
-  <div id="ey">
-    <header>
-      <div class="top">
-        <img src="/images/meLogo.svg" alt="my logo" />
-        <nav class="menu">
-          <a href="/">Home</a>
-          <a href="#works">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-      <div id="intro">
-        <p>
-          {{ intro }}
-        </p>
-      </div>
-    </header>
-    <address id="contact">
-      <!-- put contact info here again so employer can reach me quickly -->
-      <p>
-        email:
-        <a href="mailto:ebow.yawson@gmail.com">ebow.yawson@gmail.com</a>
-        <span> | phone: <a href="tel:973-489-2670">973 489 2670</a></span>
-      </p>
-    </address>
-    <main id="bio">
-      <!-- Background and my image will go here -->
-      <h2>Summary</h2>
-      <p>
-        {{ bio }}
-      </p>
-    </main>
-    <section id="works" v-for="work in showcase">
-      <!-- 
-                Here my potfolio stands. Show 3 on mobile. 4 on tablet. 6 on laptop
-                link to github
-                
-                *have to work on displaying images from js
-                
-             -->
-      <img :src="work.image" :alt="work.alt" />
-      <h2 class="content">
-        {{ work.name }}
+  <body>
+    <aside>
+      <h2 class="small">Website under construction!</h2>
+      <h2 class="big">
+        Not ready for larger screens yet. (viewable @ 320px max)
       </h2>
-      <p class="content">
-        {{ work.skills[0] }}, {{ work.skills[1] }}, {{ work.skills[2] }}, {{ work.skills[3] }}
-      </p>
-      <a class="content" :href="work.link" target="_blank" rel="noopener">Github link</a>
-    </section>
-    <aside id="media">
-      <!-- social media and other news. hidden in mobile view -->
-      <p>
-        {{ friends }}
-        <span><a
-            href="https://www.linkedin.com/search/results/people/?facetIndustry=%5B%2296%22%2C%224%22%5D&facetNetwork=%5B%22F%22%5D&origin=FACETED_SEARCH"
-            target="_blank" aria-label="link to my linkedin friends in the tech field"
-            rel="noopener">Linkedin.</a></span>
-      </p>
     </aside>
-    <footer>
-      <div id="social">
-        <a href="https://www.linkedin.com/in/ebowyawson" target="_blank" rel="noopener"
-          aria-label="link to my linkedin page"><i class="fa fa-linkedin fa"></i></a>
-        <a href="https://www.twitter.com/yawson_e" target="_blank" rel="noopener"
-          aria-label="link to my twitter page"><i class="fa fa-twitter fa"></i></a>
-        <a href="https://www.github.com/eyawson" target="_blank" rel="noopener" aria-label="link to my github page"><i
-            class="fa fa-github fa"></i></a>
+    <div id="ey">
+      <header>
+        <div class="top">
+          <img src="/images/meLogo.svg" alt="my logo" />
+          <nav class="menu">
+            <a href="#works">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div id="intro">
+          <h1>
+            {{ name }}
+          </h1>
+          <h2>
+            {{ intro }}
+          </h2>
+          <h3>
+            {{ introB }}
+          </h3>
+        </div>
+      </header>
+      <address id="contact">
+        <!-- put contact info here again so employer can reach me quickly -->
+        <p>
+          email:
+          <a href="mailto:ebow.yawson@gmail.com">ebow.yawson@gmail.com</a>
+          <span> | phone: <a href="tel:973-489-2670">973 489 2670</a></span>
+        </p>
+      </address>
+      <main id="bio">
+        <!-- Background and my image will go here -->
+        <h2>Summary</h2>
+        <p>
+          {{ bio }}
+        </p>
+      </main>
+      <div>
+        <h2 class="workTitle">Portfolio</h2>
       </div>
-      <p>Glad you came by...</p>
-      <ol id="skills">
-        <li v-for="skill in majorSkills">
-          {{ skill }}
-        </li>
-      </ol>
-    </footer>
-  </div>
-</body>
-
+      <section id="portfolio">
+        <div id="works" v-for="work in showcase">
+          <img :src="work.image" :alt="work.alt" />
+          <h2 class="content">
+            {{ work.name }}
+          </h2>
+          <p class="content">
+            {{ work.skills[0] }}, {{ work.skills[1] }}, {{ work.skills[2] }}, {{
+            work.skills[3] }}
+          </p>
+          <a class="content" :href="work.link" target="_blank" rel="noopener"
+            >Github link</a
+          >
+        </div>
+      </section>
+      <aside id="media">
+        <!-- social media and other news. hidden in mobile view -->
+        <p>
+          {{ friends }}
+          <span
+            ><a
+              href="https://www.linkedin.com/search/results/people/?facetIndustry=%5B%2296%22%2C%224%22%5D&facetNetwork=%5B%22F%22%5D&origin=FACETED_SEARCH"
+              target="_blank"
+              aria-label="link to my linkedin friends in the tech field"
+              rel="noopener"
+              >Linkedin.</a
+            ></span
+          >
+        </p>
+      </aside>
+      <footer>
+        <div id="social">
+          <a
+            href="https://www.linkedin.com/in/ebowyawson"
+            target="_blank"
+            rel="noopener"
+            aria-label="link to my linkedin page"
+            ><i class="fa fa-linkedin fa"></i
+          ></a>
+          <a
+            href="https://www.twitter.com/yawson_e"
+            target="_blank"
+            rel="noopener"
+            aria-label="link to my twitter page"
+            ><i class="fa fa-twitter fa"></i
+          ></a>
+          <a
+            href="https://www.github.com/eyawson"
+            target="_blank"
+            rel="noopener"
+            aria-label="link to my github page"
+            ><i class="fa fa-github fa"></i
+          ></a>
+        </div>
+        <p>Glad you came by...</p>
+        <ol id="skills">
+          <li v-for="skill in majorSkills">
+            {{ skill }}
+          </li>
+        </ol>
+      </footer>
+    </div>
+  </body>
 </html>
