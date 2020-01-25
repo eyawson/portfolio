@@ -26,42 +26,42 @@ const app = new Vue({
     contact: ['973 489 2670', 'ebow.yawson@gmail.com'],
     showcase: [{
         name: 'Udagram Microservice',
-        image: '/images/udagram.png',
+        image: '/images/udagram.jpg',
         alt: 'application screenshot',
         skills: ['Kubernetes', 'Docker', 'Travis CI', 'a11y'],
         link: 'https://github.com/eyawson/udacity-microservice-project'
       },
       {
         name: 'Ravenous',
-        image: '/images/ravenous.png',
+        image: '/images/ravenous.jpg',
         alt: 'application screenshot',
         skills: ['React', 'APIs', 'CRUD', 'a11y'],
         link: 'https://github.com/eyawson/ravenous'
       },
       {
         name: 'Restaurant Reviews',
-        image: '/images/restaurant.png',
+        image: '/images/restaurant.jpg',
         alt: 'application screenshot',
         skills: ['Javascript', 'HTML / CSS', 'PWA', 'a11y'],
         link: 'https://github.com/eyawson/Restaurant-Reviews'
       },
       {
         name: 'Udagram Social App',
-        image: '/images/udagramp2.png',
+        image: '/images/udagramp2.jpg',
         alt: 'application screenshot',
         skills: ['elastic beanstalk', 'APIs', 'Typescript', 'a11y'],
         link: 'https://github.com/eyawson/udagram'
       },
       {
         name: 'Phebe\'s book',
-        image: './images/phebe.png',
+        image: './images/phebe.jpg',
         alt: 'application screenshot',
         skills: ['HTML', 'CSS', 'Javascript', 'a11y'],
         link: 'https://github.com/eyawson/phebebook'
       },
       {
         name: 'Quantum Leap Website',
-        image: '/images/qli.png',
+        image: '/images/qli.jpg',
         alt: 'application screenshot',
         skills: ['HTML', 'CSS', 'AWS', 'a11y'],
         link: 'https://github.com/eyawson/ravenous'
