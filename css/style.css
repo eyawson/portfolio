@@ -117,10 +117,6 @@ h2 {
   box-shadow: 0 8px 16px #fcb8a1;
 }
 
-.works content {
-  padding: 2px 16px;
-}
-
 section div img {
   max-width: 95%;
   overflow: hidden;
@@ -154,10 +150,6 @@ footer {
   font-size: 2rem;
 }
 
-.social {
-  text-align: center;
-}
-
 #skills {
   padding-top: 30px;
   border-top: 1px dashed #ffffff;
@@ -171,18 +163,8 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
-  .big {
-    display: none;
-  }
-
   .small {
     display: block;
-  }
-}
-
-@media only screen and (min-width: 321px) {
-  h2.big {
-    display: none;
   }
 }
 
