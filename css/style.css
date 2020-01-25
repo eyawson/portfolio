@@ -187,6 +187,10 @@ footer {
 }
 
 @media only screen and (min-width: 426px) {
+  header {
+    background-image: url("/images/backgroundMedium.svg");
+  }
+
   #intro {
     margin: 0;
     position: absolute;
@@ -226,16 +230,23 @@ footer {
 }
 
 @media only screen and (min-width: 769px) {
+  header {
+    background-image: url("/images/backgroundBig.svg");
+  }
+
   header img {
     width: 70px;
   }
+
   nav {
     padding-right: 30px;
   }
+
   nav a {
     font-size: 1.3em;
     padding: 3px 10px;
   }
+
   #intro h1 {
     font-size: 4rem;
   }
@@ -247,9 +258,16 @@ footer {
   #intro h3 {
     font-size: 3.6rem;
   }
+
   address {
     font-size: 1.6rem;
   }
+
+  #bio p {
+    border-left: 10px solid #fcb8a1;
+    padding-left: 15px;
+  }
+
   #bio p,
   #media p,
   #bio h2,
@@ -257,10 +275,12 @@ footer {
     font-size: 1.2em;
     width: 70%;
   }
+
   #bio h2,
   .workTitle {
     font-size: 2em;
   }
+
   #sectionHead {
     border-bottom: 1px solid orange;
   }
@@ -273,6 +293,7 @@ footer {
   #portfolio {
     grid-template-columns: repeat(3, 1fr);
   }
+
   #media {
     padding: 20px 0px;
   }
