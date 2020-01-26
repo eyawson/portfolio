@@ -71,7 +71,7 @@ address a {
 }
 
 #intro {
-  margin-top: 40%;
+  margin-top: 200px;
   color: #150578;
   padding-left: 10px;
   text-align: center;
@@ -79,6 +79,11 @@ address a {
   font-size: 1.2rem;
   line-height: 1;
   padding: 5px;
+}
+
+.pipe {
+  color: #fcb8a1;
+  font-weight: 900;
 }
 
 #bio h2,
@@ -121,6 +126,10 @@ section div img {
   max-width: 95%;
   overflow: hidden;
   padding: 0 0 10px 8px;
+}
+
+#media {
+  text-align: center;
 }
 
 #bio p,
