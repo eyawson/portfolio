@@ -64,6 +64,8 @@ address {
   text-align: center;
   font-size: 1rem;
   padding: 15px 0;
+  border-left: 10px solid #fcb8a1;
+  border-right: 10px solid #fcb8a1;
 }
 
 address a {
@@ -71,7 +73,7 @@ address a {
 }
 
 #intro {
-  margin-top: 200px;
+  margin-top: 220px;
   color: #150578;
   padding-left: 10px;
   text-align: center;
@@ -92,7 +94,7 @@ address a {
 }
 
 .workTitle {
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid #fcb8a1;
 }
 
 h2 {
@@ -151,6 +153,7 @@ footer {
   background-color: #fcb8a1;
   padding-top: 30px;
   text-align: center;
+  margin: 0 10px 10px 10px;
 }
 
 #social a i {
