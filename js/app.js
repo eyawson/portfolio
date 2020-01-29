@@ -1,10 +1,10 @@
 const app = new Vue({
   el: '#ey',
   data: {
-    name: ' Hello!',
+    name: 'Hello!',
     intro: 'I\'m Ebow',
     introB: 'Web Developer "+" Problem Solver',
-    bio: 'I am a full-stack cloud developer looking to be a part of your team. In my many years of working professionally, I have risen rapidly through the rank due to hard work, commitment, and seeing tasks through to the end. I have been working very hard at this career change to web and cloud development. I believe I am ready to be part of your team and contribute meaningfully. This comes from a love to build and figure things out. Download my ',
+    bio: 'Well, here it goes... a teacher in science, math, history, geography, oh and basketball coach, I am a full-stack cloud developer looking to be a part of your team. In my many years of working professionally, I am always known to be hardworking, on time, own projects, and look for ways to improve. This has made me a reliable teammate, and in some cases caused me to rise rapidly through the ranks. I have been and continue to hard at this career change to become a software developer. I believe I am ready to be part of your team and contribute meaningfully. This comes from a love to build and relentlessly figure things out. Download my ',
     majorSkills: [
       'Html',
       'CSS',
