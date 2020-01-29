@@ -72,6 +72,25 @@ address a {
   color: #ffffff;
 }
 
+/* .contactIsCLicked {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.5em;
+  transition-delay: 1s;
+  transition: all 0.3s ease;
+  color: #fcb8a1;
+}
+
+#socialContact {
+  display: none;
+}
+
+#socialContact a {
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+
+
 #intro {
   margin-top: 220px;
   color: #150578;
@@ -241,6 +260,10 @@ footer {
     padding: 3px 10px;
   }
 
+  #intro {
+    top: 45%;
+  }
+
   #intro h1 {
     font-size: 4rem;
   }
@@ -291,4 +314,9 @@ footer {
   #media {
     padding: 20px 0px;
   }
+
+  /* #social a i:hover {
+    transform: scale(1.3);
+    color: #ffffff;
+  } */
 }
