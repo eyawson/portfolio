@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--
+
+<head>
+  <!--
     _ .-') _ (`-. .-. .-') .-. .-') ('-. ,---.,---.,---.
     ( \( -O ) ( (OO ) \ ( OO ) \ ( OO ) _( OO) | || || |
     ,------. ,-.-') _.` \ ,--. ,--. .-'),-----. ;-----.\(,------.| || || |
@@ -12,58 +13,51 @@
     | |\ \(_| | | | | |\ \ `' '-' '| '--' /| `---..--. .--. .--.
     `--' '--' `--' `--' `--' '--' `-----' `------' `------''--' '--' '--'
   -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="theme-color" content="#fcb8a1" />
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/a4497ac3a2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Kulim+Park:300,600,700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-    <script src="./js/app.js" defer></script>
-    <title>Vue Ebow's Portfolio</title>
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#fcb8a1" />
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <script src="https://kit.fontawesome.com/a4497ac3a2.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,600,700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="./js/app.js" defer></script>
+  <title>Vue Ebow's Portfolio</title>
+</head>
 
-  <body>
-    <div id="ey">
-      <header>
-        <div class="top">
-          <img src="/images/meLogo.svg" alt="my logo" />
-          <nav class="menu">
-            <a href="/">Home</a>
-            <a href="#works">Portfolio</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-        <div id="intro">
-          <h1>
-            {{ name }}
-          </h1>
-          <h2>
-            {{ intro }}
-          </h2>
-          <h3>
-            {{ introB }}
-          </h3>
-        </div>
-      </header>
-      <address id="contact">
-        <p>
-          <a href="mailto:ebow.yawson@gmail.com">ebow.yawson@gmail.com</a>
-          <span>
-            <span class="pipe"> | </span>
-            <a href="tel:+1-973-489-2670">+1 (973) 489 2670</a></span
-          >
-        </p>
-        <!-- <a
+<body>
+  <div id="ey">
+    <header>
+      <div class="top">
+        <img src="/images/meLogo.svg" alt="my logo" />
+        <nav class="menu">
+          <a href="/">Home</a>
+          <a href="#works">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div id="intro">
+        <h1>
+          {{ name }}
+        </h1>
+        <h2>
+          {{ intro }}
+        </h2>
+        <h3>
+          {{ introB }}
+        </h3>
+      </div>
+    </header>
+    <address id="contact">
+      <p>
+        <a href="mailto:ebow.yawson@gmail.com">ebow.yawson@gmail.com</a>
+        <span>
+          <span class="pipe"> | </span>
+          <a href="tel:+1-973-489-2670">+1 (973) 489 2670</a></span>
+      </p>
+      <!-- <a
           href="https://www.linkedin.com/in/ebowyawson"
           target="_blank"
           rel="noopener"
@@ -84,85 +78,62 @@
           aria-label="link to my github page"
           ><i class="fab fa-github-alt"></i
         ></a> -->
-      </address>
-      <main id="bio">
-        <h2>Summary</h2>
-        <p>
-          {{ bio }}
-          <!-- working on download resume part-->
-          <span>
-            <a
-              href="/docs/EbowYawsonResume.pdf"
-              download
-              aria-label="link download my resume"
-              >resume <i class="fas fa-download"></i>
-            </a>
-          </span>
-        </p>
-      </main>
-      <div id="sectionHead">
-        <h2 class="workTitle">Portfolio</h2>
-      </div>
-      <section id="portfolio">
-        <div id="works" v-for="work in showcase">
-          <img :src="work.image" :alt="work.alt" />
-          <h2 class="content">
-            {{ work.name }}
-          </h2>
-          <p class="content">
-            {{ work.skills[0] }}, {{ work.skills[1] }}, {{ work.skills[2] }}, {{
-            work.skills[3] }}
-          </p>
-          <a class="content" :href="work.link" target="_blank" rel="noopener"
-            >Github link</a
-          >
-        </div>
-      </section>
-      <aside id="media">
-        <p>
-          {{ friends }}
-          <span>
-            <a
-              href="https://www.linkedin.com/search/results/people/?facetIndustry=%5B%2296%22%2C%224%22%5D&facetNetwork=%5B%22F%22%5D&origin=FACETED_SEARCH"
-              target="_blank"
-              aria-label="link to my linkedin friends in the tech field"
-              rel="noopener"
-              >Linkedin.
-            </a>
-          </span>
-        </p>
-      </aside>
-      <footer>
-        <div id="social">
-          <a
-            href="https://www.linkedin.com/in/ebowyawson"
-            target="_blank"
-            rel="noopener"
-            aria-label="link to my linkedin page"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://www.twitter.com/yawson_e"
-            target="_blank"
-            rel="noopener"
-            aria-label="link to my twitter page"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            href="https://www.github.com/eyawson"
-            target="_blank"
-            rel="noopener"
-            aria-label="link to my github page"
-            ><i class="fab fa-github-alt"></i
-          ></a>
-        </div>
-        <p>Glad you came by!</p>
-        <ol id="skills">
-          <li v-for="skill in majorSkills">
-            {{ skill }}
-          </li>
-        </ol>
-      </footer>
+    </address>
+    <main id="bio">
+      <h2>Summary</h2>
+      <p>
+        {{ bio }}
+        <!-- working on download resume part-->
+        <span>
+          <a href="/docs/EbowYawsonResume.pdf" download aria-label="link download my resume">resume <i
+              class="fas fa-download"></i>
+          </a>
+        </span>
+      </p>
+    </main>
+    <div id="sectionHead">
+      <h2 class="workTitle">Portfolio</h2>
     </div>
-  </body>
+    <section id="portfolio">
+      <div id="works" v-for="work in showcase">
+        <img :src="work.image" :alt="work.alt" />
+        <h2 class="content">
+          {{ work.name }}
+        </h2>
+        <p class="content">
+          {{ work.skills[0] }}, {{ work.skills[1] }}, {{ work.skills[2] }}, {{
+            work.skills[3] }}
+        </p>
+        <a class="content" :href="work.link" target="_blank" rel="noopener">Github link</a>
+      </div>
+    </section>
+    <aside id="media">
+      <p>
+        {{ friends }}
+        <span>
+          <a href="https://www.linkedin.com/search/results/people/?facetIndustry=%5B%2296%22%2C%224%22%5D&facetNetwork=%5B%22F%22%5D&origin=FACETED_SEARCH"
+            target="_blank" aria-label="link to my linkedin friends in the tech field" rel="noopener">Linkedin.
+          </a>
+        </span>
+      </p>
+    </aside>
+    <footer>
+      <div id="social">
+        <a href="https://www.linkedin.com/in/ebowyawson" target="_blank" rel="noopener"
+          aria-label="link to my linkedin page"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.twitter.com/yawson_e" target="_blank" rel="noopener"
+          aria-label="link to my twitter page"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.github.com/eyawson" target="_blank" rel="noopener" aria-label="link to my github page"><i
+            class="fab fa-github-alt"></i></a>
+      </div>
+      <p>Glad you came by!</p>
+      <ol id="skills">
+        <li v-for="skill in majorSkills">
+          {{ skill }}
+        </li>
+      </ol>
+    </footer>
+  </div>
+</body>
+
 </html>
