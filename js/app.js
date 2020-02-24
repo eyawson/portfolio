@@ -4,8 +4,7 @@ const app = new Vue({
     name: "Hello!",
     intro: "I'm Ebow",
     introB: 'Web Developer "+" Problem Solver',
-    bio:
-      "Well, here it goes... a teacher in science, math, history, geography, oh and basketball coach, I am a full-stack cloud developer looking to be a part of your team. In my many years of working professionally, I am always known to be hardworking, on time, lead projects, and look for ways to improve projects. This has made me a reliable teammate, and in some cases caused me to rise rapidly through the ranks. I have been and continue to hard at this career change to become a software developer. I believe I am ready to be part of your team and contribute meaningfully. This comes from a love to build and relentlessly figure things out. Download my ",
+    bio: "Well, here it goes... a teacher in science, math, history, geography, oh and basketball coach. I am a full-stack cloud developer looking to be a part of your team. In my many years of working professionally, I am always known to be hardworking, on time, lead projects, and look for ways to improve projects. This has made me a reliable teammate, and in some cases caused me to rise rapidly through the ranks. I have been and continue to work hard at this career change to become a software developer. I am ready to be part of your team and contribute meaningfully. This comes from a love to build and relentlessly figure things out. Download my ",
     majorSkills: [
       "Html",
       "CSS",
@@ -25,8 +24,7 @@ const app = new Vue({
     ],
     friends: "If I do no fit your role, how about you check out my friends on ",
     contact: ["973 489 2670", "ebow.yawson@gmail.com"],
-    showcase: [
-      {
+    showcase: [{
         name: "Udagram Microservice",
         image: "/images/udagram.jpg",
         alt: "application screenshot",
