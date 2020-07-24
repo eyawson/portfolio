@@ -25,6 +25,13 @@ const app = new Vue({
     friends: "If I do no fit your role, how about you check out my friends on ",
     contact: ["973 489 2670", "ebow.yawson@gmail.com"],
     showcase: [{
+        name: "Covid-19 Tracker",
+        image: "/images/covid.png",
+        alt: "application screenshot",
+        skills: ["React", "AWS CodePipeline", "a11y"],
+        link: "https://d2hfopo65qhm9m.cloudfront.net/"
+      },
+      {
         name: "Udagram Microservice",
         image: "/images/udagram.jpg",
         alt: "application screenshot",
