@@ -18,6 +18,7 @@ const app = new Vue({
       "AWS",
       "Microservices",
       "Git",
+      "Lambda",
       "SQL",
       "Accessibility",
       "Html",
@@ -25,17 +26,16 @@ const app = new Vue({
       "JavaScript",
       "PWA",
       "React",
-      "Vue",
-      "Lambda"
+      "Vue"
     ],
     friends: "If I do no fit your role, how about you check out my friends on ",
-    contact: ["973 489 2670", "ebow.yawson@gmail.com"],
+    contact: ["973 489 2670", "yawson@gmail.com"],
     showcase: [{
-      name: "Covid-19 Tracker",
-      image: "/images/covid.png",
-      alt: "application screenshot",
-      skills: ["React", "AWS CodePipeline", "a11y"],
-      link: "https://d2hfopo65qhm9m.cloudfront.net/"
+      name: "Cloudformation IaC",
+      image: "/images/cloudformation.jpeg",
+      alt: "lucidchart diagram",
+      skills: ["Cloudformation", "Bash", "AWS", "Linux"],
+      link: "https://github.com/eyawson/udacity-cloudformation-deployment"
     },
     {
       name: "Udagram Microservice",
@@ -43,6 +43,20 @@ const app = new Vue({
       alt: "application screenshot",
       skills: ["Kubernetes", "Docker", "Travis CI", "a11y"],
       link: "https://github.com/eyawson/udacity-microservice-project"
+    },
+    {
+      name: "Udagram Social App",
+      image: "/images/udagramp2.jpg",
+      alt: "application screenshot",
+      skills: ["elastic beanstalk", "APIs", "Typescript", "a11y"],
+      link: "https://github.com/eyawson/udagram"
+    },
+    {
+      name: "Covid-19 Tracker",
+      image: "/images/covid.png",
+      alt: "application screenshot",
+      skills: ["React", "AWS CodePipeline", "a11y"],
+      link: "https://d2hfopo65qhm9m.cloudfront.net/"
     },
     {
       name: "Ravenous",
@@ -57,13 +71,6 @@ const app = new Vue({
       alt: "application screenshot",
       skills: ["Javascript", "HTML / CSS", "PWA", "a11y"],
       link: "https://github.com/eyawson/Restaurant-Reviews"
-    },
-    {
-      name: "Udagram Social App",
-      image: "/images/udagramp2.jpg",
-      alt: "application screenshot",
-      skills: ["elastic beanstalk", "APIs", "Typescript", "a11y"],
-      link: "https://github.com/eyawson/udagram"
     },
     {
       name: "Phebe's book",
