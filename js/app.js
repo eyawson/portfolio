@@ -29,8 +29,15 @@ const app = new Vue({
       "Vue"
     ],
     friends: "If I do no fit your role, how about you check out my friends on ",
-    contact: ["973 489 2670", "yawson@gmail.com"],
+    contact: ["973 489 2670", "yawson@hey.com"],
     showcase: [{
+      name: "Machine Learning price predictor",
+      image: "/images/ml_image.jpg",
+      alt: "Jonathan Hey's machine learning sketch",
+      skills: ["Docker", "Bash", "Kubernetes", "Linux", "CircleCI"],
+      link: "https://github.com/eyawson/ML-microservice-k8s"
+    },
+    {
       name: "Cloudformation IaC",
       image: "/images/cloudformation.jpeg",
       alt: "lucidchart diagram",
