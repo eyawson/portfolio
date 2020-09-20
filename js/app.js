@@ -4,7 +4,7 @@ const app = new Vue({
     name: "Hello!",
     intro: "I'm Ebow",
     introB: 'DevOps Engineer "+" Problem Solver',
-    bio: "Well, here it goes... a teacher in science, math, history, geography, oh and basketball coach. I am a devOps/ cloud engineer looking to be a part of your team. In my many years of working professionally, I am always known to be hardworking, on time, lead projects, and look for ways to improve projects. This has made me a reliable teammate, and in some cases caused me to rise rapidly through the ranks. I have been and continue to work hard at this career change to become a software developer. I am ready to be part of your team and contribute meaningfully. This comes from a love to build and relentlessly figure things out.",
+    bio: "Well, here it goes... a teacher in science, math, history, geography, oh and basketball coach. I am a devOps/ cloud engineer for starter too. In my many years of working professionally, I am always known to be hardworking, on time, lead projects, and look for ways to improve projects. This has made me a reliable teammate, and in some cases caused me to rise rapidly through the ranks. I have been and continue to work hard at this career change to become a software developer. I am ready to be part of your team and contribute meaningfully. This comes from a love to build and relentlessly figure things out.",
     majorSkills: [
       "Coudformation",
       "Terraform",
@@ -34,6 +34,7 @@ const app = new Vue({
       name: "Machine Learning price predictor",
       image: "/images/ml_image.jpg",
       alt: "Jonathan Hey's machine learning sketch",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["Docker", "Bash", "Kubernetes", "Linux", "CircleCI"],
       link: "https://github.com/eyawson/ML-microservice-k8s"
     },
@@ -41,6 +42,7 @@ const app = new Vue({
       name: "Cloudformation IaC",
       image: "/images/cloudformation.jpeg",
       alt: "lucidchart diagram",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["Cloudformation", "Bash", "AWS", "Linux"],
       link: "https://github.com/eyawson/udacity-cloudformation-deployment"
     },
@@ -48,6 +50,7 @@ const app = new Vue({
       name: "Udagram Microservice",
       image: "/images/udagram.jpg",
       alt: "application screenshot",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["Kubernetes", "Docker", "Travis CI", "a11y"],
       link: "https://github.com/eyawson/udacity-microservice-project"
     },
@@ -55,6 +58,7 @@ const app = new Vue({
       name: "Udagram Social App",
       image: "/images/udagramp2.jpg",
       alt: "application screenshot",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["elastic beanstalk", "APIs", "Typescript", "a11y"],
       link: "https://github.com/eyawson/udagram"
     },
@@ -62,6 +66,7 @@ const app = new Vue({
       name: "Covid-19 Tracker",
       image: "/images/covid.png",
       alt: "application screenshot",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["React", "AWS CodePipeline", "a11y"],
       link: "https://d2hfopo65qhm9m.cloudfront.net/"
     },
@@ -69,6 +74,7 @@ const app = new Vue({
       name: "Ravenous",
       image: "/images/ravenous.jpg",
       alt: "application screenshot",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["React", "APIs", "CRUD", "a11y"],
       link: "https://github.com/eyawson/ravenous"
     },
@@ -76,6 +82,7 @@ const app = new Vue({
       name: "Restaurant Reviews",
       image: "/images/restaurant.jpg",
       alt: "application screenshot",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["Javascript", "HTML / CSS", "PWA", "a11y"],
       link: "https://github.com/eyawson/Restaurant-Reviews"
     },
@@ -83,6 +90,7 @@ const app = new Vue({
       name: "Phebe's book",
       image: "./images/phebe.jpg",
       alt: "application screenshot",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["HTML", "CSS", "Javascript", "a11y"],
       link: "https://github.com/eyawson/phebebook"
     },
@@ -90,6 +98,7 @@ const app = new Vue({
       name: "Quantum Leap Website",
       image: "/images/qli.jpg",
       alt: "application screenshot",
+      decription: "A set of data processing elements connected in series, where the output of one element is the input of the next one",
       skills: ["HTML", "CSS", "AWS", "a11y"],
       link: "https://github.com/eyawson/ravenous"
     }
