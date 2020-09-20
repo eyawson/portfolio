@@ -1,0 +1,27 @@
+{
+  "name": "ebow-portfolio",
+  "version": "1.0.0",
+  "description": "This is my personal page with my projects and bio",
+  "main": "serviceWorker.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "browser-sync start --server portfolio --files index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyawson/portfolio.git"
+  },
+  "keywords": ["devOps", "Vue"],
+  "author": "Ebow Yawson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyawson/portfolio/issues"
+  },
+  "homepage": "https://github.com/eyawson/portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}
