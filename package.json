@@ -14,13 +14,16 @@
     "type": "git",
     "url": "git+https://github.com/eyawson/portfolio.git"
   },
-  "keywords": ["devOps", "Vue"],
+  "keywords": [
+    "devOps",
+    "Vue"
+  ],
   "author": "Ebow Yawson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eyawson/portfolio/issues"
   },
-  "homepage": "https://github.com/eyawson/portfolio#readme",
+  "homepage": "https:ebow.me",
   "devDependencies": {
     "browser-sync": "^2.26.12"
   }
