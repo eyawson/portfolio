@@ -30,7 +30,6 @@ jobs:
 workflows:
   node-tests:
     jobs:
-      - echo $myName
       - print_hello
       - print_world:
           requires: [print_hello]
