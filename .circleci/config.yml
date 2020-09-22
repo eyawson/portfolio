@@ -12,6 +12,10 @@ jobs:
           command: |
             npm install
             echo 'Hello'
+            echo $myName
+          environment:
+            myName: Ebow_Yawson
+
   print_world:
     docker:
       - image: circleci/node:13.8.0
@@ -27,6 +31,7 @@ workflows:
   node-tests:
     jobs:
       - node/test
+      - echo $myName
       - print_hello
       - print_world:
           requires: [print_hello]
