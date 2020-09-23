@@ -27,9 +27,34 @@ jobs:
             npm install
             echo 'World'
 
+  save_hello_world_output:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - checkout
+      - run: echo "Hello World" > output.txt
+      - persist_to_workspace:
+          root: /tmp/dir
+          paths:
+            - temp/file
+
+  print_output_file:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/dir
+      - run: echo 'What is stored for persist is:'
+          cat output.txt
+
 workflows:
   node-tests:
     jobs:
       - print_hello
       - print_world:
           requires: [print_hello]
+      - save_hello_world_output
+      - print_output_file:
+          requires:
+            - save_hello_world_output
