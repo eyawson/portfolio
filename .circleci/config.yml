@@ -47,13 +47,16 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - checkout
       - attach_workspace:
-          at: ~/
+          at: ~/docs
       - run:
           command: |
             echo 'What is stored for persist is:'
             cat ~/output.txt
+      - run:
+          name: Oh what a fail
+          command: echo 'Well it is failure is it not?'
+          when: on_fail
 
 workflows:
   node-tests:
