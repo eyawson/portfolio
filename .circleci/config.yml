@@ -1,7 +1,7 @@
 version: 2.1
 commands:
   print_pipeline_id:
-    Description: "Print out an ID number"
+    description: "Print out an ID number"
     steps:
       - run: echo ${CIRCLE_WORKFLOW_ID}
 orbs:
