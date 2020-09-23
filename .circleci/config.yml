@@ -32,7 +32,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: echo "Hello World" > /docs/output.txt
+      - run: echo "Hello World" > ~/docs/output.txt
       - persist_to_workspace:
           root: /docs
           paths:
