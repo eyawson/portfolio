@@ -23,7 +23,8 @@ jobs:
             echo $myName
           environment:
             myName: Ebow_Yawson
-      - print_pipeline_id
+      - print_pipeline_id:
+          to: "Me"
 
   print_world:
     docker:
