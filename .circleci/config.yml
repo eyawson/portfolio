@@ -32,9 +32,9 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: echo "Hello World" > ~/docs/output.txt
+      - run: echo "Hello World" > ~/output.txt
       - persist_to_workspace:
-          root: /docs
+          root: ~/
           paths:
             - output.txt
 
@@ -44,9 +44,9 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: /docs
+          at: ~/
       - run: echo 'What is stored for persist is:'
-          cat /docs/output.txt
+          cat ~/output.txt
 
 workflows:
   node-tests:
