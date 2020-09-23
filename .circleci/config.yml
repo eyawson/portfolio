@@ -48,7 +48,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - attach_workspace:
-          at: ~/docs
+          at: ~/
       - run:
           command: |
             echo 'What is stored for persist is:'
