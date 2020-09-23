@@ -1,13 +1,9 @@
 version: 2.1
 commands:
   print_pipeline_id:
-    Description: "Print out workflow ID"
-    parameters:
-      to:
-        type: string
-        defaults: $CIRCLE_WORKFLOW_ID
+    Description: "Print out an ID number"
     steps:
-      - run: echo << parameters.to >>
+      - run: echo ${CIRCLE_WORKFLOW_ID}
 orbs:
   node: circleci/node@3.0.0
 jobs:
@@ -23,8 +19,7 @@ jobs:
             echo $myName
           environment:
             myName: Ebow_Yawson
-      - print_pipeline_id:
-          to: "Me"
+      - print_pipeline_id
 
   print_world:
     docker:
