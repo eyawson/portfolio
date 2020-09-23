@@ -45,9 +45,10 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/
-      - run: |
-          echo 'What is stored for persist is:'
-          cat ~/output.txt
+      - run:
+          command: |
+            echo 'What is stored for persist is:'
+            cat ~/output.txt
 
 workflows:
   node-tests:
