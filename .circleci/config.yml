@@ -32,11 +32,11 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: echo "Hello World" > output.txt
+      - run: echo "Hello World" > /docs/output.txt
       - persist_to_workspace:
-          root: /tmp/dir
+          root: /docs
           paths:
-            - temp/file
+            - output.txt
 
   print_output_file:
     docker:
@@ -44,9 +44,9 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: /tmp/dir
+          at: /docs
       - run: echo 'What is stored for persist is:'
-          cat output.txt
+          cat /docs/output.txt
 
 workflows:
   node-tests:
