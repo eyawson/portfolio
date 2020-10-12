@@ -31,6 +31,13 @@ const app = new Vue({
     friends: "If I do no fit your role, how about you check out my friends on ",
     contact: ["973 489 2670", "yawson@hey.com"],
     showcase: [{
+      name: "Capstone PipelineProject",
+      image: "/images/pass.png",
+      alt: "An image of jenkins pipeline stage passing",
+      decription: "A CI/CD pipeline for a microservices application using a rolling update deployment strategy. Using a defined scope, the project satisfies all business requirements.",
+      skills: ["Docker", "Jenkins", "Kubernetes", "Linux", "AWS EKS"],
+      link: "https://github.com/eyawson/udacity-devops-capstone"
+    }, {
       name: "Machine Learning price predictor",
       image: "/images/ml_image.jpg",
       alt: "Jonathan Hey's machine learning sketch",
