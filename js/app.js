@@ -4,7 +4,7 @@ const app = new Vue({
     name: "Hello!",
     intro: "I'm Ebow",
     introB: 'DevOps Engineer "+" Problem Solver',
-    bio: "Well, here it goes... a teacher in science, math, history, geography, oh and basketball coach. I am a devOps/ cloud engineer for starter too. In my many years of working professionally, I am always known to be hardworking, on time, lead projects, and look for ways to improve projects. This has made me a reliable teammate, and in some cases caused me to rise rapidly through the ranks. I have been and continue to work hard at this career change to become a software developer. I am ready to be part of your team and contribute meaningfully. This comes from a love to build and relentlessly figure things out.",
+    bio: "Well, here it goes... a teacher in science, math, history, geography, oh and a gold medal winning basketball coach. These days, I have been honing my skills as a DevOps/ Cloud engineer. In my many years of working professionally, I am always known to be hardworking, on time, lead projects, and look for ways to improve projects. This has made me a reliable teammate, and in some cases caused me to rise rapidly through the ranks. I have been and continue to work hard at this career change to become a software developer. I am ready to be part of your team and contribute meaningfully. This comes from a love to build and relentlessly figure things out.",
     majorSkills: [
       "Coudformation",
       "Terraform",
@@ -31,6 +31,13 @@ const app = new Vue({
     friends: "If I do no fit your role, how about you check out my friends on ",
     contact: ["973 489 2670", "yawson@hey.com"],
     showcase: [{
+      name: "Capstone Pipeline Project",
+      image: "/images/pass.png",
+      alt: "An image of jenkins pipeline stage passing",
+      decription: "A CI/CD pipeline for a microservices application using a rolling update deployment strategy. Using a defined scope, the project satisfies all business requirements.",
+      skills: ["Docker", "Jenkins", "Kubernetes", "Linux", "AWS EKS"],
+      link: "https://github.com/eyawson/udacity-devops-capstone"
+    }, {
       name: "Machine Learning price predictor",
       image: "/images/ml_image.jpg",
       alt: "Jonathan Hey's machine learning sketch",
