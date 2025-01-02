@@ -6,11 +6,6 @@
   "directories": {
     "doc": "docs"
   },
-  "scripts": {
-    "dev": "browser-sync start --server portfolio --files index.html",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eyawson/portfolio.git"
@@ -24,8 +19,11 @@
   "bugs": {
     "url": "https://github.com/eyawson/portfolio/issues"
   },
-  "homepage": "https:ebow.me",
+  "homepage": "https://ebow.me",
   "devDependencies": {
     "browser-sync": "^3.0.3"
+  },
+  "dependencies": {
+    "@vue/cli": "^5.0.8"
   }
 }
