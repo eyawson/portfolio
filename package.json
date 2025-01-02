@@ -24,6 +24,6 @@
   },
   "homepage": "https:ebow.me",
   "devDependencies": {
-    "browser-sync": "^2.26.12"
+    "browser-sync": "^3.0.3"
   }
 }
