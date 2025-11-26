@@ -1,0 +1,16 @@
+{
+  "name": "portfol",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir dist && cp -r public/* dist" 
+  },
+  "keywords": [],
+  "author": "ebow yawson",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
